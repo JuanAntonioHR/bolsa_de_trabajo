@@ -1,11 +1,12 @@
-import { NavBar } from "@/components";
+import { NavBar, Hero } from "@/components";
 
 export default function Home() {
   return (
-    <main>
+    <div className="flex flex-col gap-16">
       <NavBar />
-
-
-    </main>
+      <main className="flex flex-col gap-16 px-72">
+        <Hero />
+      </main>
+    </div>
   );
 }
