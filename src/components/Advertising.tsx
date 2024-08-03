@@ -1,4 +1,5 @@
 "use client";
+// https://stackoverflow.com/questions/60465892/react-slick-sync-functional-component
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { fakeAdsCompanies } from "@/constants";
@@ -7,15 +8,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 
 export function Advertising() {
-  const [nav1, setNav1] = useState<Slider | undefined>(undefined);
-  const [nav2, setNav2] = useState<Slider | undefined>(undefined);
-  const sliderRef1 = useRef<Slider | null>(null);
-  const sliderRef2 = useRef<Slider | null>(null);
-
-  useEffect(() => {
-    setNav1(sliderRef1.current || undefined);
-    setNav2(sliderRef2.current || undefined);
-  }, []);
+  const [nav1, setNav1] = useState<Slider | null>(null);
+  const [nav2, setNav2] = useState<Slider | null>(null);
 
   const settings = {
     infinite: true,
@@ -27,8 +21,8 @@ export function Advertising() {
   return (
     <div className="slider-container">
       <Slider
-        asNavFor={nav2}
-        ref={sliderRef1}
+        asNavFor={nav2 || undefined}
+        ref={slider => setNav1(slider)}
       >
         {
           fakeAdsCompanies.map(({ title, image, description }) => (
@@ -49,14 +43,8 @@ export function Advertising() {
         }
       </Slider>
       <Slider
-        asNavFor={nav1}
-        ref={slider => {
-          if (sliderRef2.current) {
-            sliderRef2.current = slider;
-            return;
-          }
-          slider = null;
-        }}
+        asNavFor={nav1 || undefined}
+        ref={(slider2) => setNav2(slider2)}
         slidesToShow={3}
         swipeToSlide={true}
         focusOnSelect={true}
