@@ -9,8 +9,8 @@ import Slider from "react-slick";
 export function Advertising() {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
-  let sliderRef1 = useRef<Slider | null>(null);
-  let sliderRef2 = useRef<Slider | null>(null);
+  const sliderRef1 = useRef<Slider | null>(null);
+  const sliderRef2 = useRef<Slider | null>(null);
 
   useEffect(() => {
     setNav1(sliderRef1.current || undefined);
@@ -28,7 +28,7 @@ export function Advertising() {
     <div className="slider-container">
       <Slider
         asNavFor={nav2}
-        ref={slider => (sliderRef1.current = slider)}
+        ref={sliderRef1}
       >
         {
           fakeAdsCompanies.map(({ title, image, description }) => (
@@ -50,7 +50,13 @@ export function Advertising() {
       </Slider>
       <Slider
         asNavFor={nav1}
-        ref={slider => (sliderRef2.current = slider)}
+        ref={slider => {
+          if (sliderRef2.current) {
+            sliderRef2.current = slider;
+            return;
+          }
+          slider = null;
+        }}
         slidesToShow={3}
         swipeToSlide={true}
         focusOnSelect={true}
