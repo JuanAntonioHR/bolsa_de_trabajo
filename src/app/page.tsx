@@ -1,8 +1,10 @@
-import { Button } from "@nextui-org/react";
+import { NavBar } from "@/components";
 
 export default function Home() {
   return (
     <main>
+      <NavBar />
+
 
     </main>
   );
