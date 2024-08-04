@@ -49,7 +49,7 @@ export function Advertising({ companies }: Props) {
       <Slider
         asNavFor={nav1 || undefined}
         ref={(slider2) => setNav2(slider2)}
-        slidesToShow={3}
+        slidesToShow={4}
         swipeToSlide={true}
         focusOnSelect={true}
         {...settings}
