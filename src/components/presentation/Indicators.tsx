@@ -5,7 +5,7 @@ export function Indicators() {
 
 
   return (
-    <div className="flex flex-col items-center gap-12">
+    <div className="flex flex-col items-center gap-12 px-48">
       <h2 className="text-2xl font-bold">Nuestros indicadores</h2>
       <div className="flex gap-12">
         {

@@ -2,12 +2,16 @@
 // https://stackoverflow.com/questions/60465892/react-slick-sync-functional-component
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { fakeAdsCompanies } from "@/constants";
 import React, { useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
+import { CompanyAdvertising } from "@/interfaces";
 
-export function Advertising() {
+interface Props {
+  companies: CompanyAdvertising[]
+}
+
+export function Advertising({ companies }: Props) {
   const [nav1, setNav1] = useState<Slider | null>(null);
   const [nav2, setNav2] = useState<Slider | null>(null);
 
@@ -19,13 +23,13 @@ export function Advertising() {
   }
 
   return (
-    <div className="slider-container">
+    <div className="slider-container px-48">
       <Slider
         asNavFor={nav2 || undefined}
         ref={slider => setNav1(slider)}
       >
         {
-          fakeAdsCompanies.map(({ title, image, description }) => (
+          companies.map(({ title, image, description }) => (
             <div key={title} className="!flex !gap-12">
               <Image
                 src={image}
@@ -51,7 +55,7 @@ export function Advertising() {
         {...settings}
       >
         {
-          fakeAdsCompanies.map(({ image }) => (
+          companies.map(({ image }) => (
             <div key={image} className="">
               <Image
                 src={image}

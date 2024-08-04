@@ -1,12 +1,34 @@
-import { Hero, Advertising, Indicators } from "@/components";
+import {
+  Advertising,
+  AppropriateJob,
+  Hero,
+  Indicators
+} from "@/components";
+import { CompanyAdvertising } from "@/interfaces";
+import { fakeAdsCompanies } from "@/constants";
 
+async function getAdvertisingCompanies(): Promise<CompanyAdvertising[] | void> {
+  // fetch to have companies that have purchased the ads section
+  // If something wrong, then return void
+  // return;
 
-export default function LandingPage() {
+  return fakeAdsCompanies;
+}
+
+export default async function LandingPage() {
+
+  const advertisingCompanies = await getAdvertisingCompanies();
+
   return (
-    <main className="flex flex-col gap-48 px-48">
+    <main className="flex flex-col gap-48">
       <Hero />
-      <Advertising />
+      {
+        advertisingCompanies
+          ? <Advertising companies={advertisingCompanies} />
+          : <></>
+      }
       <Indicators />
+      <AppropriateJob />
     </main>
   );
 }

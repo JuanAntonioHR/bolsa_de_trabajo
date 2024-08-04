@@ -4,7 +4,7 @@ export function Hero() {
 
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-48">
 
       <div className="flex flex-col w-[450px] gap-4">
         <h1 className="text-4xl text-zinc-800">Plataforma virtual de empleo y bolsa de trabajo UAQ</h1>

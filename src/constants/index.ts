@@ -34,6 +34,35 @@ export const indicators: { title: string, description: string }[] = [
     }
 ];
 
+export const careers1: string[] = [
+    "Ingeniería en computación",
+    "Enfermería",
+    "Ingeniería de software",
+    "Fisioterapia",
+    "Biología",
+    "Nutrición",
+    "Estudios literarios",
+    "Licenciatura en Administración",
+    "Contador público",
+    "Medicina",
+    "Odontología",
+    "Biotecnología"
+];
+
+export const careers2: string[] = [
+    "Lenguas modernas inglés",
+    "Psicología",
+    "Innovación y gestión educativa",
+    "Música",
+    "Actuación",
+    "Sociología",
+    "Relaciones internacionales",
+    "Derecho",
+    "Historia",
+    "Gastronomia",
+    "Arquitectura",
+    "Químico ambienral"
+]
 
 // Fake (when real data exists, delete the respective constant above)
 
