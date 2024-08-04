@@ -3,7 +3,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { fakeAdsCompanies } from "@/constants";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 
@@ -15,7 +15,7 @@ export function Advertising() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    className: "mt-12"
+    className: "mt-12 cursor-pointer"
   }
 
   return (

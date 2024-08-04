@@ -1,6 +1,23 @@
-import { CompanyAdvertising } from "@/interfaces"
+import { CompanyAdvertising, Page } from "@/interfaces"
 
-
+export const pagesInLanding: Page[] = [
+    {
+        href: "/login",
+        name: "Inicia sesión"
+    },
+    {
+        href: "/signin",
+        name: "Regístrate"
+    },
+    {
+        href: "/fq",
+        name: "Preguntas frecuentes"
+    },
+    {
+        href: "/independent",
+        name: "Servicios independientes"
+    }
+]
 
 
 
