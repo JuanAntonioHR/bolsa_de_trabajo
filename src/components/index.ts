@@ -1,4 +1,9 @@
-export { NavBar } from "@/components/NavBar";
-export { Hero } from "@/components/Hero";
-export { Advertising } from "@/components/Advertising";
-export { ActiveLink } from "@/components/ActiveLink";
+// presentation
+// FOR: Landing | Login | SignIn | FQ | Independent
+export { ActiveLink } from "@/components/presentation/ActiveLink";
+export { Advertising } from "@/components/presentation/Advertising";
+export { Hero } from "@/components/presentation/Hero";
+export { Indicators } from "@/components/presentation/Indicators";
+export { NavBar } from "@/components/presentation/NavBar";
+
+

@@ -17,8 +17,22 @@ export const pagesInLanding: Page[] = [
         href: "/independent",
         name: "Servicios independientes"
     }
-]
+];
 
+export const indicators: { title: string, description: string }[] = [
+    {
+        title: "+ 400 empresas",
+        description: "Han publicado vacantes en bolsa de trabajo UAQ."
+    },
+    {
+        title: "+ 2000 estudiantes",
+        description: "Registrados buscando trabajo activamente."
+    },
+    {
+        title: "Certificación ISO",
+        description: "Contamos con certificación de cosas de empleo."
+    }
+];
 
 
 // Fake (when real data exists, delete the respective constant above)
@@ -49,4 +63,4 @@ export const fakeAdsCompanies: CompanyAdvertising[] = [
         title: "Kronox & Kairos",
         description: "Participar en el crecimiento de las  MiPyme a través de la consultoría, desarrollo, tecnología y capacitación especializadas en sistemas Contpaqi, buscando promover el buen uso de los sistemas, para lograr hacer más eficientes los procesos administrativos y contables de nuestros clientes. Todo esto bajo un marco en donde predomine la honestidad y el profesionalismo."
     }
-]
+];

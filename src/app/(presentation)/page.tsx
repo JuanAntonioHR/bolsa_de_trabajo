@@ -1,4 +1,4 @@
-import { Hero, Advertising } from "@/components";
+import { Hero, Advertising, Indicators } from "@/components";
 
 
 export default function LandingPage() {
@@ -6,10 +6,7 @@ export default function LandingPage() {
     <main className="flex flex-col gap-48 px-48">
       <Hero />
       <Advertising />
-
-      <div className="h-screen">
-        <span>Siguiente seccion</span>
-      </div>
+      <Indicators />
     </main>
   );
 }
