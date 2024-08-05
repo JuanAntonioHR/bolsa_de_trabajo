@@ -1,4 +1,4 @@
-import { CompanyAdvertising, Page } from "@/interfaces"
+import { CompanyAdvertising, Page, TargetGroup } from "@/interfaces"
 
 export const pagesInLanding: Page[] = [
     {
@@ -62,6 +62,36 @@ export const careers2: string[] = [
     "Gastronomia",
     "Arquitectura",
     "Químico ambienral"
+];
+
+export const targetGroups: TargetGroup[] = [
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos para estudiantes",
+        description: "Estás a punto de culminar una etapa crucial en tu vida académica. Es el momento de poner en práctica todo lo que has aprendido y comenzar tu carrera profesional con el pie derecho.",
+        image: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate como miembro UAQ",
+        title: "Para estudiantes de últimos semestres",
+    },
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos para egresados",
+        description: "Tu tiempo en la universidad te ha preparado bien, y ahora es el momento de avanzar en tu carrera. Conéctate con empleadores que valoran tu formación y habilidades.",
+        image: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate como miembro UAQ",
+        title: "Para estudiantes de últimos semestres",
+    },
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos al buscar empleo",
+        description: "Nuestra plataforma no solo es para estudiantes y egresados. Cualquier persona que busque mejorar su situación laboral o explorar nuevas oportunidades es bienvenida.",
+        image: "https://images.pexels.com/photos/7578686/pexels-photo-7578686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate en la plataforma",
+        title: "Para público en general",
+    },
 ]
 
 // Fake (when real data exists, delete the respective constant above)

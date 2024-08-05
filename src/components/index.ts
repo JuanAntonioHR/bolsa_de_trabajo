@@ -6,5 +6,6 @@ export { AppropriateJob } from "@/components/presentation/AppropriateJob";
 export { Hero } from "@/components/presentation/Hero";
 export { Indicators } from "@/components/presentation/Indicators";
 export { NavBar } from "@/components/presentation/NavBar";
+export { TargetGroups } from "@/components/presentation/TargetGroups";
 
 

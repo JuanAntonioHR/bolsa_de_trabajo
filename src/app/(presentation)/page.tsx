@@ -2,10 +2,13 @@ import {
   Advertising,
   AppropriateJob,
   Hero,
-  Indicators
+  Indicators,
+  TargetGroups
 } from "@/components";
 import { CompanyAdvertising } from "@/interfaces";
 import { fakeAdsCompanies } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 async function getAdvertisingCompanies(): Promise<CompanyAdvertising[] | void> {
   // fetch to have companies that have purchased the ads section
@@ -29,6 +32,7 @@ export default async function LandingPage() {
       }
       <Indicators />
       <AppropriateJob />
+      <TargetGroups />
     </main>
   );
 }
