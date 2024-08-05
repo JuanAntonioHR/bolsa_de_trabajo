@@ -22,7 +22,7 @@ export function UaqEducativeOffer() {
           faculties.map(fac => (
             <Link target="_blank" href={fac.href} className="flex gap-4 items-center w-80 hover:scale-105 transition-all" key={fac.name}>
               <span className={`block w-8 h-8 rounded-full ${fac.color}`}></span>
-              <span className="line-clamp-1">{fac.name}</span>
+              <span className="line-clamp-1 text-sm">{fac.name}</span>
             </Link>
           ))
         }

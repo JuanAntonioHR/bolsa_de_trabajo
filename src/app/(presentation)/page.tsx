@@ -6,6 +6,7 @@ import {
   TargetGroups,
   EmployeerOrService,
   UaqEducativeOffer,
+  Contact
 } from "@/components";
 import { CompanyAdvertising } from "@/interfaces";
 import { fakeAdsCompanies } from "@/constants";
@@ -35,6 +36,7 @@ export default async function LandingPage() {
       <TargetGroups />
       <EmployeerOrService />
       <UaqEducativeOffer />
+      <Contact />
     </main>
   );
 }
