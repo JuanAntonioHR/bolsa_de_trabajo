@@ -72,7 +72,7 @@ export const targetGroups: TargetGroup[] = [
         image: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         signInHref: "signin/uaq",
         signInText: "Regístrate como miembro UAQ",
-        title: "Para estudiantes de últimos semestres",
+        title: "Para estudiantes de últimos semestres UAQ",
     },
     {
         adviceHref: "/advices/student",
@@ -81,7 +81,7 @@ export const targetGroups: TargetGroup[] = [
         image: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         signInHref: "signin/uaq",
         signInText: "Regístrate como miembro UAQ",
-        title: "Para estudiantes de últimos semestres",
+        title: "Para egresados UAQ",
     },
     {
         adviceHref: "/advices/student",
