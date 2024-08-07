@@ -10,3 +10,4 @@ export { Indicators } from "@/components/presentation/Indicators";
 export { NavBar } from "@/components/presentation/NavBar";
 export { TargetGroups } from "@/components/presentation/TargetGroups";
 export { UaqEducativeOffer } from "@/components/presentation/UaqEducativeOffer";
+export { Footer } from "@/components/presentation/Footer";

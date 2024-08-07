@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Contact() {
 
@@ -9,10 +10,10 @@ export function Contact() {
       <h3 className="text-2xl font-bold">Conéctate con nosotros en redes sociales!</h3>
 
       <div className="flex gap-4 items-center">
-        <Image src="/facebook.svg" width={40} height={40} alt="Xd" />
-        <Image src="/linkedin.svg" width={40} height={40} alt="Xd" />
-        <Image src="/youtube.svg" width={40} height={40} alt="Xd" />
-        <Image src="/instagram.svg" width={40} height={40} alt="Xd" />
+        <Link href="/"><Image src="/facebook.svg" width={40} height={40} alt="Xd" /></Link>
+        <Link href="/"><Image src="/linkedin.svg" width={40} height={40} alt="Xd" /></Link>
+        <Link href="/"><Image src="/youtube.svg" width={40} height={40} alt="Xd" /></Link>
+        <Link href="/"><Image src="/instagram.svg" width={40} height={40} alt="Xd" /></Link>
       </div>
 
       <p className="text-center leading-loose text-zinc-600">Mantente al día con las últimas noticias, eventos y oportunidades laborales. Síguenos en Facebook e Instagram para ser parte de nuestra comunidad, conocer historias de éxito y recibir contenido exclusivo que te ayudará a avanzar en tu carrera.</p>
