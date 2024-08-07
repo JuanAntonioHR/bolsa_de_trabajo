@@ -27,7 +27,20 @@ const config: Config = {
           700: '#23385d',
           800: '#12223b',
           900: '#010b1a'
-        }
+        },
+        facArtes: "#614184",
+        facConta: "#0061A9",
+        facDerecho: "#526671",
+        facCiencias: "#00BD1D",
+        facInformatica: "#00695A",
+        facFilosofia: "#FFAD46",
+        facEnfermeria: "#009A92",
+        facPoliticas: "#009BC6",
+        facIngenieria: "#FF231B",
+        facLenguas: "#FACB00",
+        facMedicina: "#005483",
+        facPsicologia: "#005483",
+        facQuimica: "#FF6900"
       }
     },
   },

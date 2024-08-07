@@ -9,3 +9,13 @@ export interface Page {
     name: string
     icon?: string
 }
+
+export interface TargetGroup {
+    adviceHref: string
+    adviceText: string
+    description: string
+    image: string
+    signInHref: string
+    signInText: string
+    title: string
+}

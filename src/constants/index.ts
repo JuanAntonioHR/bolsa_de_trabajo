@@ -1,4 +1,4 @@
-import { CompanyAdvertising, Page } from "@/interfaces"
+import { CompanyAdvertising, Page, TargetGroup } from "@/interfaces"
 
 export const pagesInLanding: Page[] = [
     {
@@ -62,7 +62,105 @@ export const careers2: string[] = [
     "Gastronomia",
     "Arquitectura",
     "Químico ambienral"
-]
+];
+
+export const targetGroups: TargetGroup[] = [
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos para estudiantes",
+        description: "Estás a punto de culminar una etapa crucial en tu vida académica. Es el momento de poner en práctica todo lo que has aprendido y comenzar tu carrera profesional con el pie derecho.",
+        image: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate como miembro UAQ",
+        title: "Para estudiantes de últimos semestres UAQ",
+    },
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos para egresados",
+        description: "Tu tiempo en la universidad te ha preparado bien, y ahora es el momento de avanzar en tu carrera. Conéctate con empleadores que valoran tu formación y habilidades.",
+        image: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate como miembro UAQ",
+        title: "Para egresados UAQ",
+    },
+    {
+        adviceHref: "/advices/student",
+        adviceText: "Consejos al buscar empleo",
+        description: "Nuestra plataforma no solo es para estudiantes y egresados. Cualquier persona que busque mejorar su situación laboral o explorar nuevas oportunidades es bienvenida.",
+        image: "https://images.pexels.com/photos/7578686/pexels-photo-7578686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        signInHref: "signin/uaq",
+        signInText: "Regístrate en la plataforma",
+        title: "Para público en general",
+    },
+];
+
+export const faculties: { name: string, color: string, href: string }[] = [
+    {
+        color: "facArtes",
+        name: "Facultad de artes",
+        href: "https://fa.uaq.mx/"
+    },
+    {
+        color: "facInformatica",
+        name: "Facultad de informática",
+        href: "https://www.uaq.mx/informatica/"
+    },
+    {
+        color: "facIngenieria",
+        name: "Facultad de ingniería",
+        href: "https://ingenieria.uaq.mx/"
+    },
+    {
+        color: "facConta",
+        name: "Facultad de contaduría y administración",
+        href: "https://fca.uaq.mx/"
+    },
+    {
+        color: "facFilosofia",
+        name: "Facultad de filosofía",
+        href: "https://filosofia.uaq.mx/ffi_home/"
+    },
+    {
+        color: "facLenguas",
+        name: "Facultad de lenguas y letras",
+        href: "https://fll.uaq.mx/"
+    },
+    {
+        color: "facDerecho",
+        name: "Facultad de derecho",
+        href: ""
+    },
+    {
+        color: "facEnfermeria",
+        name: "Facultad de enfermería",
+        href: "https://enfermeria.uaq.mx/"
+    },
+    {
+        color: "facMedicina",
+        name: "Facultad de medicina",
+        href: "https://derecho.uaq.mx/"
+    },
+    {
+        color: "facCiencias",
+        name: "Facultad de ciencias naturales",
+        href: "https://fcn.uaq.mx/"
+    },
+    {
+        color: "facPoliticas",
+        name: "Facultad de ciencias políticas y sociales",
+        href: "https://fcps.uaq.mx/"
+    },
+    {
+        color: "facPsicologia",
+        name: "Facultad de psicología",
+        href: "https://psicologia.uaq.mx/"
+    },
+    {
+        color: "facQuimica",
+        name: "Facultad de química",
+        href: "https://quimica.unam.mx/"
+    }
+];
 
 // Fake (when real data exists, delete the respective constant above)
 

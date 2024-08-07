@@ -2,7 +2,12 @@ import {
   Advertising,
   AppropriateJob,
   Hero,
-  Indicators
+  Indicators,
+  TargetGroups,
+  EmployeerOrService,
+  UaqEducativeOffer,
+  Contact,
+  Footer
 } from "@/components";
 import { CompanyAdvertising } from "@/interfaces";
 import { fakeAdsCompanies } from "@/constants";
@@ -29,6 +34,11 @@ export default async function LandingPage() {
       }
       <Indicators />
       <AppropriateJob />
+      <TargetGroups />
+      <EmployeerOrService />
+      <UaqEducativeOffer />
+      <Contact />
+      <Footer />
     </main>
   );
 }
