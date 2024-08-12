@@ -13,10 +13,10 @@ export const pagesInLanding: Page[] = [
         href: "/fq",
         name: "Preguntas frecuentes"
     },
-    {
-        href: "/independent",
-        name: "Servicios independientes"
-    }
+    // {
+    //     href: "/independent",
+    //     name: "Servicios independientes"
+    // }
 ];
 
 export const indicators: { title: string, description: string }[] = [
