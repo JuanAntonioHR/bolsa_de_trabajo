@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+.facArtes {
+    background-color: #614184
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.facConta {
+    background-color: #0061A9
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.facDerecho {
+    background-color: #526671
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.facCiencias {
+    background-color: #00BD1D
+}
+
+.facInformatica {
+    background-color: #00695A
+}
+
+.facFilosofia {
+    background-color: #FFAD46
+}
+
+.facEnfermeria {
+    background-color: #009A92
+}
+
+.facPoliticas {
+    background-color: #009BC6
+}
+
+.facIngenieria {
+    background-color: #FF231B
+}
+
+.facLenguas {
+    background-color: #FACB00
+}
+
+.facMedicina {
+    background-color: #005483
+}
+
+.facPsicologia {
+    background-color: #005483
+}
+
+.facQuimica {
+    background-color: #FF6900
 }
