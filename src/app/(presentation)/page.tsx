@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import {
   Advertising,
   AppropriateJob,
@@ -7,21 +8,30 @@ import {
   EmployeerOrService,
   UaqEducativeOffer,
   Contact,
-  Footer
+  Footer,
+  LoadingIcon
 } from "@/components";
 import { CompanyAdvertising } from "@/interfaces";
 import { fakeAdsCompanies } from "@/constants";
 
-async function getAdvertisingCompanies(): Promise<CompanyAdvertising[] | void> {
-  // fetch to have companies that have purchased the ads section
-  // If something wrong, then return void
-  // return;
+// Custom delay function
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+async function getAdvertisingCompanies(): Promise<CompanyAdvertising[] | void> {
+  // Simulate a delay
+  await delay(3000); // 3 seconds delay
   return fakeAdsCompanies;
 }
 
-export default async function LandingPage() {
+function LoadingComponent() {
+  return (
+    <div className="flex items-center justify-center my-auto pb-10">
+      <LoadingIcon />
+    </div>
+  );
+}
 
+async function LandingPageContent() {
   const advertisingCompanies = await getAdvertisingCompanies();
 
   return (
@@ -40,5 +50,13 @@ export default async function LandingPage() {
       <Contact />
       <Footer />
     </main>
+  );
+}
+
+export default function LandingPage() {
+  return (
+    <Suspense fallback={<LoadingComponent />}>
+      <LandingPageContent />
+    </Suspense>
   );
 }

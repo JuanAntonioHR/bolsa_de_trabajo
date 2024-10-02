@@ -11,3 +11,5 @@ export { NavBar } from "@/components/presentation/NavBar";
 export { TargetGroups } from "@/components/presentation/TargetGroups";
 export { UaqEducativeOffer } from "@/components/presentation/UaqEducativeOffer";
 export { Footer } from "@/components/presentation/Footer";
+export { LoadingIcon } from "@/components/presentation/LoadingIcon";
+export { CardSkeleton } from "@/components/presentation/CardSkeleton";
