@@ -57,6 +57,7 @@ export default function LandingPage() {
   return (
     <Suspense fallback={<LoadingComponent />}>
       <LandingPageContent />
+      {/* hola jajaja */}
     </Suspense>
   );
 }
